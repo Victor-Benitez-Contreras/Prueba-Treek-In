@@ -7,8 +7,14 @@
     flex-wrap: wrap;
 }
 
-.header__secondary--grid {
+.header__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+}
+
+.header__principal--title {
+    font-size: $fs-5xlarge;
+    font-family: $font;
 }
 

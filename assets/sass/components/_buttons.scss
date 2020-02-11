@@ -1,4 +1,6 @@
 .primary-button {
+    border-radius: 0px;
+
     @include boton-blue();
 
     &:hover {
