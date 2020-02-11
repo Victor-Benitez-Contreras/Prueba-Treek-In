@@ -1,0 +1,14 @@
+.header {
+    background-image: url("../img/bg-hero.png");  
+}
+
+.header__primary--container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__secondary--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+

@@ -1,2 +1,19 @@
-@mixin boton-blue($color-corp7) {
-  }
+@mixin boton-blue() {
+      
+    background-color: $color-corp07;
+    font-family: $font-f02;
+    font-size: $fs-medium;
+    color: $color-white;
+
+ }
+
+
+ @mixin boton-blue-hover() {
+      
+  background-color: $color-corp08;
+  font-family: $font-f02;
+  font-size: $fs-medium;
+  color: $color-white;
+
+}
+
