@@ -1,5 +1,7 @@
 .header {
     background-image: url("../img/bg-hero.png");  
+    text-align: center;
+    
 }
 
 .header__primary--container {
@@ -15,6 +17,19 @@
 
 .header__principal--title {
     font-size: $fs-5xlarge;
-    font-family: $font;
+    font-family: $font-f01;
+    font-weight: 1000;
+    text-align: left;
 }
 
+.header__principal--text {
+    font-size: $fs-small;
+    font-family: $font-f02;
+    font-weight: $regularw;
+    text-align: left;
+}
+
+.header__grid--item:nth-child(1){
+    padding: 4rem 0rem;
+    margin: 4rem 0rem;
+}
