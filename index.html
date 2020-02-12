@@ -6,7 +6,8 @@
        <meta name="description" content="sitio web app treek-in">
        <title>Treek-In App</title>
        <!-- Google-Fonts -->
-       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
        
         <!-- Mis estilos -->
        <link rel="stylesheet" href="assets/css/styles.css">
@@ -14,9 +15,8 @@
     </head>
 
     <body>
-    <!-- Barra de navegacion -->
 
-        
+    <!-- Barra de navegacion -->    
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="#"> <img src="assets/img/Logo.svg" alt="Logo TreekIn"></a>
@@ -27,10 +27,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                <a class="nav-link" href="#">Acerca de</a>
+                <a class="nav-link" href="#header">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Carracteristicas</a>
+                <a class="nav-link" href="#caracteristicas">Carracteristicas</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Precio</a>
@@ -42,30 +42,29 @@
             </form>
             </div>
         </div>   
-      </nav>
+    </nav>
     
     <!-- Cabecera -->
-    <header class="header">
+    <header id="#header"class="header">
     
         <div class="header__principal container">
             <div class="header__primary--container">
-                <div class="header__secondary--container">
+                
                     <div class="header__grid">
                         <div class="header__grid--item">
                             <h1 class="header__principal--title">Haz Trekking sin parar</h1>
                             <p class="header__principal--text">Con treek-In te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición.</p>
                         </div>
-                        <div class="header__grid--item"></div>
-                        <div class="header__grid--item"></div>
+                        
                     </div>
-                </div>
+                
             </div>
         </div>
         
     </header>  
     
     <!-- Secciones --> 
-    <section class="characteristics">
+    <section id="caracteristicas" class="characteristics">
         <div class="characteristics__principal container">
             <div class="characteristics__primary--content">
                 <h2 class="characteristics__content--title">Características</h2>
@@ -83,16 +82,18 @@
             
     <!-- Footer -->        
     <footer class="footer">
-       <div>
-        <div>
-            <div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-
+       <div class="container">
+        <div class="footer__grid--container">
+            <div class="footer__grid--item">
+                <ul class="footer__list--terms">
+                    <li class="footer__list--item">Legal</li>
+                    <li class="footer__list--item">Cookies</li>
+                    <li class="footer__list--item">Sobre Anuncios</li>
                 </ul>
+            </div>
+            <div class="footer__grid--item"></div>
+            <div class="footer__grid--item">
+                <p>© 2018 Treek-in SPA</p>
             </div>
         </div>
        </div>

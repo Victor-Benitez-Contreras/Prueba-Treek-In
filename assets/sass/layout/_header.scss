@@ -1,7 +1,7 @@
+
 .header {
     background-image: url("../img/bg-hero.png");  
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .header__primary--container {
@@ -15,6 +15,15 @@
     grid-gap:10px;
 }
 
+@media (max-width:720px){
+    .header__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
 .header__principal--title {
     font-size: $fs-5xlarge;
     font-family: $font-f01;
@@ -23,13 +32,19 @@
 }
 
 .header__principal--text {
-    font-size: $fs-small;
+    font-size: $fs-medium;
     font-family: $font-f02;
     font-weight: $regularw;
     text-align: left;
+    line-height: 1.8rem;
+    padding-top: 0.5rem;
 }
 
-.header__grid--item:nth-child(1){
-    padding: 4rem 0rem;
-    margin: 4rem 0rem;
+.header__grid--item{
+    padding: 3rem 0rem;
+    margin: 4rem 0rem 30rem;
 }
+
+
+
+

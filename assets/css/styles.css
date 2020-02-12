@@ -9896,6 +9896,12 @@ h3 {
   grid-gap: 10px;
 }
 
+@media (max-width: 720px) {
+  .header__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
 .header__principal--title {
   font-size: 50px;
   font-family: "raleway";
@@ -9904,15 +9910,36 @@ h3 {
 }
 
 .header__principal--text {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "open sans";
   font-weight: "regular";
   text-align: left;
+  line-height: 1.8rem;
+  padding-top: 0.5rem;
 }
 
-.header__grid--item:nth-child(1) {
-  padding: 4rem 0rem;
-  margin: 4rem 0rem;
+.header__grid--item {
+  padding: 3rem 0rem;
+  margin: 4rem 0rem 30rem;
+}
+
+.footer {
+  background-color: #221D23;
+}
+
+.footer__grid--item {
+  color: #fff;
+}
+
+.footer__grid--container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-rows: 100px 10px;
+  padding: 0.5rem 0rem 2rem;
+}
+
+.footer__list--terms {
+  text-decoration: none;
 }
 
 .primary-button {

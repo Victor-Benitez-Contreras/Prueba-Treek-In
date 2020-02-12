@@ -1,0 +1,22 @@
+.footer {
+    background-color: $color-corp01; 
+}
+
+.footer__grid--item {
+    color: $color-white;
+}
+
+.footer__grid--container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 100px 10px;
+    padding: 0.5rem 0rem 2rem;
+}
+
+.footer__list--terms {
+    text-decoration: none;
+}
+
+.footer__list--item {
+    
+}
