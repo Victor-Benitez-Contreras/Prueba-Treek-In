@@ -6,21 +6,40 @@
     color: $color-white;
 }
 
+
+.footer__grid--item:nth-child(3){
+    text-align: right;
+    p {
+        padding: 2rem 0rem 1rem;
+        font-size: $fs-small;
+        color: $color-corp06;
+    }
+}
+
+
 .footer__grid--container {
     display: grid;
     grid-template-columns: 3fr 1fr 2fr;
-    grid-template-rows: 30px 10px;
+    grid-template-rows: 48px 16px;
     padding: 0.5rem 0rem 2rem;
 }
 
 .footer__list--terms {
+   display: inline-block;
    list-style: none;
 }
 
 .footer__list--item {
+    display: inline-block;
     font-family: $font-f01;
+    padding: 2rem 3rem 1rem 0rem;
+    font-size: $fs-small;
+    color: $color-corp06;
 }
 
+@media (max-width: 720px) {
+    
 
-
+}
+ 
 

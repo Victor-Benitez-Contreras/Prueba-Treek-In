@@ -1,21 +1,53 @@
+
 @mixin boton-blue() {
-      
     background-color: $color-corp07;
     font-family: $font-f01;
     font-size: $fs-medium;
     color: $color-white;
     font-weight: $boldw;
-
  }
 
 
- @mixin boton-blue-hover() {
-      
-  background-color: $color-corp08;
-  font-family: $font-f01;
-  font-size: $fs-medium;
-  color: $color-white;
-  font-weight: $boldw;
-
+ @mixin boton-blue-hover() {    
+    background-color: $color-corp08;
+    font-family: $font-f01;
+    font-size: $fs-medium;
+    color: $color-white;
+    font-weight: $boldw;
 }
 
+
+@mixin boton-blue-focus() {
+    background-color: $color-gray;
+    font-family: $font-f01;
+    font-size: $fs-medium;
+    color: $color-white;
+    font-weight: $boldw;
+}
+
+
+@mixin boton-transparente () {
+    background-color: $color-white;
+    font-family: $font-f01;
+    font-size: $fs-medium;
+    color: $color-corp01;
+    font-weight: $regularw;
+}
+
+
+@mixin boton-transparente-hover () {
+  background-color: $color-white;
+  font-family: $font-f01;
+  font-size: $fs-medium;
+  color: $color-corp02;
+  font-weight: $regularw;
+}
+
+
+@mixin boton-transparente-focus () {
+  background-color: $color-white;
+  font-family: $font-f01;
+  font-size: $fs-medium;
+  color: $color-gray;
+  font-weight: $regularw;
+}

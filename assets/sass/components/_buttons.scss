@@ -6,8 +6,24 @@
     &:hover {
         @include boton-blue-hover();
     }
+
+    &:focus {
+        @include boton-blue-focus();
+    }
 }
 
 
+.secondary-button {
+    border-radius: 0px;
 
+    @include boton-transparente();
+
+    &:hover {
+        @include boton-transparente-hover();
+    }
+
+    &:focus {
+        @include boton-transparente-focus();
+    }
+}
 
