@@ -24,26 +24,10 @@
 }
 
 
-@media (max-width:1020px){
-    .header__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width:720px){
-    .header__grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
 .header__principal--title {
     font-size: $fs-5xlarge;
     font-family: $font-f01;
-    font-weight: 1000;
+    font-weight: $boldw;
     text-align: left;
 }
 
@@ -60,9 +44,21 @@
 
 .header__grid--item{
     padding: 3rem 0rem;
-    margin: 4rem 0rem 30rem;
+    margin: 4rem 0rem 27.5rem;
 }
 
 
 
+@media (max-width:1020px){
+    .header__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
+@media (max-width:720px){
+    .header__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

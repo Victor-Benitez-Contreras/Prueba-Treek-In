@@ -8,7 +8,7 @@
 }
 
 
-.footer__grid--item:nth-child(3){
+.footer__grid--item:nth-child(2){
     text-align: right;
     p {
         padding: 2rem 0rem 1rem;
@@ -18,17 +18,19 @@
 }
 
 
-.footer__grid--container {
+.footer__grid {
     display: grid;
-    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-columns: 4fr 3fr;
     grid-template-rows: 48px 16px;
     padding: 0.5rem 0rem 2rem;
 }
+
 
 .footer__list--terms {
    display: inline-block;
    list-style: none;
 }
+            
 
 .footer__list--item {
     display: inline-block;
@@ -38,8 +40,37 @@
     color: $color-corp06;
 }
 
-@media (max-width: 720px) {
+
+@media (max-width: 780px) {
     
+    .footer__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 38px 38px;
+        padding: 0.5rem 0rem 0.5rem;
+    }
+    
+    .footer__list--item {
+        display: inline-block;
+        text-align: center;
+        font-family: $font-f01;
+        padding: 0.5rem 1rem 0.5rem 0rem;
+        font-size: $fs-small;
+        color: $color-corp06;
+    }
+
+    .footer__grid--item:nth-child(1){
+        text-align: center;
+    }
+
+    .footer__grid--item:nth-child(2){
+        text-align: center;
+        p {
+            padding: 0.5rem 0rem 0.5rem;
+            font-size: $fs-small;
+            color: $color-corp06;
+        }
+    }
 
 }
  
