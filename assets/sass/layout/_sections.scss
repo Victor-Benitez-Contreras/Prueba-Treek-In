@@ -1,9 +1,9 @@
 
 //Secciones (caracteristicas - precios)
 
-------o------ 
 
 //Characteristics section
+
 
 .characteristics {
     background: $color-white;
@@ -38,11 +38,21 @@
 }
 
 
-.haracteristics__statistics--title {
+.characteristics__statistics--title {
     font-family: $font-f01;
     font-weight: $boldw;
     font-size: $fs-2xlarge; 
-    color: $color-corp01;     
+    color: $color-corp01;   
+}
+
+
+.characteristics__content--text {
+    width: 80%;
+    font-family: $font-f02;
+    font-size: $fs-medium;
+    font-weight: $regularw;
+    line-height: 2rem;
+    padding-top: 0.5rem;
 }
 
 
@@ -75,10 +85,22 @@
         font-size: $fs-3xlarge;   
     }
 
-    .haracteristics__statistics--title {
-        font-size: $fs-xlarge;       
+    .characteristics__statistics--title {
+        font-size: $fs-xlarge;  
+        font-weight: $boldw;     
+    }
+
+    .characteristics__content--text {
+        width: 100%;
+        font-family: $font-f02;
+        font-size: $fs-small;
+        font-weight: $regularw;
+        line-height: 2rem;
+        padding-left: 0rem;
     }
 }
+
+
 
 @media (max-width:440px){
     
@@ -103,6 +125,10 @@
     .characteristics__content--title{
         font-size: $fs-2xlarge; 
         text-align: center;  
+    }
+
+    .characteristics__statistics--title {
+        font-size: $fs-large;       
     }
 
 }

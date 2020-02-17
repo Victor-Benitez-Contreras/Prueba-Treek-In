@@ -6,8 +6,9 @@
 
 
 .header {
-    background-image: url("../img/bg-hero.png");   
-     
+    background-image: url("../img/bg-hero.svg");   
+    background-size: contain;    
+    background-clip: border-box;
 }
 
 
@@ -54,11 +55,63 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .header__grid--item{
+        padding: 3rem 0rem;
+        margin: 4rem 0rem 23.5rem;
+    }
+    
 }
+
 
 @media (max-width:720px){
     .header__grid {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .header__grid--item{
+        padding: 3rem 0rem;
+        margin: 3rem 0rem 15rem;
+    }
 }
+
+
+@media (max-width:520px){
+    .header {
+        background-image: url("../img/bg-hero.png"); 
+        background-size: contain;  
+    }
+
+    .header__grid--item{
+        padding: 3rem 0rem;
+        margin: 2rem 0rem 10rem;
+    }
+
+    .header__principal--title {
+        font-size: $fs-3xlarge;
+    }
+
+    .header__principal--text {
+        font-size: $fs-small;
+        font-weight: $regularw;
+        text-align: left;
+        line-height: 1.5rem;
+        padding-top: 0.5rem;
+    }
+}
+
+@media (max-width:321px){
+    .header {
+        background-image: url("../img/bg-hero.png"); 
+        background-size: 320px;  
+    }
+
+    .header__grid--item{
+        padding: 3rem 0rem;
+        margin: 2rem 0rem 6rem;
+    }
+
+}
+
+

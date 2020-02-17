@@ -30,7 +30,7 @@
    display: inline-block;
    list-style: none;
 }
-            
+ 
 
 .footer__list--item {
     display: inline-block;
@@ -54,8 +54,8 @@
         display: inline-block;
         text-align: center;
         font-family: $font-f01;
-        padding: 0.5rem 1rem 0.5rem 0rem;
-        font-size: $fs-small;
+        padding: 1rem 1rem 0.5rem 0rem;
+        font-size: $fs-xsmall;
         color: $color-corp06;
     }
 
@@ -66,9 +66,10 @@
     .footer__grid--item:nth-child(2){
         text-align: center;
         p {
-            padding: 0.5rem 0rem 0.5rem;
-            font-size: $fs-small;
+            padding: 0.5rem 0rem 1rem;
+            font-size: $fs-xsmall;
             color: $color-corp06;
+            margin-bottom: 0rem;
         }
     }
 
