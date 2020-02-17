@@ -8,7 +8,8 @@
 .header {
     background-image: url("../img/bg-hero.svg");   
     background-size: contain;    
-    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 
@@ -64,7 +65,8 @@
 }
 
 
-@media (max-width:720px){
+@media (max-width:765px){
+    
     .header__grid {
         display: grid;
         grid-template-columns: 1fr;
@@ -72,7 +74,7 @@
 
     .header__grid--item{
         padding: 3rem 0rem;
-        margin: 3rem 0rem 15rem;
+        margin: 2rem 0rem 18rem;
     }
 }
 
@@ -85,7 +87,7 @@
 
     .header__grid--item{
         padding: 3rem 0rem;
-        margin: 2rem 0rem 10rem;
+        margin: 1rem 0rem 12rem;
     }
 
     .header__principal--title {
@@ -101,17 +103,14 @@
     }
 }
 
-@media (max-width:321px){
-    .header {
-        background-image: url("../img/bg-hero.png"); 
-        background-size: 320px;  
-    }
 
+@media (max-width:321px){
+    
     .header__grid--item{
         padding: 3rem 0rem;
-        margin: 2rem 0rem 6rem;
+        margin: 0.5rem 0rem 7rem;
     }
-
+    
 }
 
 
