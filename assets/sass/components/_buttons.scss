@@ -12,7 +12,6 @@
     }
 }
 
-
 .secondary-button {
     border-radius: 0px;
 
@@ -26,4 +25,18 @@
         @include boton-transparente-focus();
     }
 }
+
+
+.prices__card--buttons {
+    
+    padding: 0.7rem 0rem;
+    width: 100%;
+    margin: 2rem 0rem 0.5rem;
+
+    @include boton-card ();
+    &:hover {
+        @include boton-card-hover ();
+    }
+}
+
 

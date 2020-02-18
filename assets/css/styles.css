@@ -10211,20 +10211,31 @@ h3 {
 .prices__grid--container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0px;
 }
 
 .prices__grid--item {
   margin: 1rem 0rem 3rem;
 }
 
-.prices__card--container {
-  width: 70%;
-  height: 500px;
-  background-color: #fff;
-  margin: auto;
-}
+@media (max-width: 780px) {
+  .prices__grid--container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0rem;
+  }
 
+  .prices__grid--item:nth-child(1) {
+    grid-column: 1/2;
+  }
+
+  .prices__title--text {
+    font-family: "raleway";
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+  }
+}
 .primary-button {
   border-radius: 0px;
   background-color: #2ab7ca;
@@ -10269,6 +10280,84 @@ h3 {
   font-size: 16px;
   color: #bababa;
   font-weight: "regular";
+}
+
+.prices__card--buttons {
+  padding: 0.7rem 0rem;
+  width: 100%;
+  margin: 2rem 0rem 0.5rem;
+  background-color: #2ab7ca;
+  color: #fff;
+  font-family: "raleway";
+  font-weight: "regular";
+  font-size: 16px;
+  border-style: none;
+}
+.prices__card--buttons:hover {
+  color: #221D23;
+  font-family: "raleway";
+  font-weight: "regular";
+  font-size: 16px;
+  box-shadow: 0rem 0rem 1em #bababa;
+}
+
+.prices__card--container {
+  width: 70%;
+  background-color: #fff;
+  margin: auto;
+  padding: 1.5rem;
+}
+.prices__card--container:hover {
+  box-shadow: 0px 10px 25px #221D23;
+}
+
+.prices__card--tier {
+  position: top;
+  border-bottom: 1px solid #aeacaf;
+  padding: 1.5rem 0rem 0rem;
+}
+
+.prices__card--title {
+  font-family: "raleway";
+  color: #221D23;
+  font-weight: "regular";
+  font-size: 20px;
+}
+
+.prices__card--price {
+  font-family: "raleway";
+  color: #221D23;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.prices__button--container {
+  position: bottom;
+  text-align: center;
+  border-top: 1px solid #aeacaf;
+}
+
+.prices__card--content-list {
+  min-height: 12rem;
+}
+
+.prices__card--list {
+  padding: 0rem 0rem 0rem 1.5rem;
+  margin: 1rem 0rem;
+}
+
+.prices__card--list-item {
+  padding: 2px 0px 0px 5px;
+}
+
+@media (max-width: 990px) {
+  .prices__card--container {
+    width: 85%;
+  }
+
+  .prices__card--price {
+    font-size: 35px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -194,18 +194,34 @@
 .prices__grid--container {
    display: grid;
    grid-template-columns: repeat(2,1fr);
-   grid-gap: 0px;
 }
 
 .prices__grid--item{  
     margin: 1rem 0rem 3rem;
 }
 
-.prices__card--container {
-    width: 70%;
-    height: 500px;
-    background-color: $color-white;   
-    margin: auto;
+
+
+@media (max-width:780px) {
+    
+    .prices__grid--container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0rem;
+     }
+
+     .prices__grid--item:nth-child(1){  
+        grid-column: 1/2;
+    }
+
+    .prices__title--text {
+        font-family: $font-f01;
+        font-size: $fs-2xlarge;
+        color: $color-white;
+        font-weight: $boldw;
+    }
 }
+
 
 

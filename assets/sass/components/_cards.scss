@@ -1,0 +1,62 @@
+
+.prices__card--container {
+    width: 70%;
+    background-color: $color-white;   
+    margin: auto;
+    padding: 1.5rem;
+
+    &:hover {
+        box-shadow: 0px 10px 25px $color-corp01;
+    }
+}
+
+
+.prices__card--tier {
+    position: top;
+    border-bottom: 1px solid $color-corp03;
+    padding: 1.5rem 0rem 0rem;
+}
+
+.prices__card--title {
+    @include text-card-title ();
+}
+
+.prices__card--price {
+    @include text-card-price ();
+}
+
+.prices__button--container {
+    position: bottom;
+    text-align: center;    
+    border-top: 1px solid $color-corp03;
+}
+
+
+.prices__card--content-list {
+    min-height: 12rem;
+}
+
+
+.prices__card--list {
+    padding: 0rem 0rem 0rem 1.5rem;
+    margin: 1rem 0rem;
+}
+
+.prices__card--list-item {
+    padding: 2px 0px 0px 5px;
+}
+
+
+@media (max-width:990px) {
+    .prices__card--container {
+        width: 85%;
+    } 
+
+    .prices__card--price {
+        font-size: $fs-2xlarge;
+    }
+}
+
+
+
+
