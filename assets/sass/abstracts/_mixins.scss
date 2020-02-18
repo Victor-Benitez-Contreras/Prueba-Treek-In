@@ -1,4 +1,8 @@
 
+//botones navbar
+
+//boton registro
+
 @mixin boton-blue() {
     background-color: $color-corp07;
     font-family: $font-f01;
@@ -25,6 +29,7 @@
     font-weight: $boldw;
 }
 
+//boton inicio sesión
 
 @mixin boton-transparente () {
     background-color: $color-white;
@@ -51,3 +56,23 @@
   color: $color-gray;
   font-weight: $regularw;
 }
+
+
+//boton carta precio
+
+@mixin boton-card () {
+  background-color: $color-corp07;
+  color: $color-white;
+  font-family: $font-f01;
+  font-weight: $regularw;
+  font-size: $fs-medium;
+}
+
+@mixin boton-card-hover () {
+  background-color: $color-corp08;
+  color: $color-white;
+  font-family: $font-f01;
+  font-weight: $regularw;
+  font-size: $fs-medium;
+}
+
